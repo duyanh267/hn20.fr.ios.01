@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qN6-rl-psT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wKr-wR-ezn">
+            <objects>
+                <viewController id="qN6-rl-psT" customClass="ViewController" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BC8-fA-hho">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uox-lr-evY">
+                                <rect key="frame" x="10" y="54" width="394" height="798"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxn-bD-4YY">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="91"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEy-Jh-4Op">
+                                        <rect key="frame" x="0.0" y="101" width="394" height="91"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xZz-hT-Vxc">
+                                                <rect key="frame" x="10" y="10" width="374" height="71"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGo-Et-Q5D" customClass="CustomAnotherButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="104.5" height="71"/>
+                                                        <color key="backgroundColor" red="0.070588235294117646" green="0.47058823529411764" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Vibrant">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="customVibrantTheme:" destination="qN6-rl-psT" eventType="touchUpInside" id="msg-o0-ZOv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGN-Ru-pLe" customClass="CustomAnotherButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="134.5" y="0.0" width="105" height="71"/>
+                                                        <color key="backgroundColor" red="0.63921568627450975" green="0.29803921568627451" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Relax"/>
+                                                        <connections>
+                                                            <action selector="customRelaxTheme:" destination="qN6-rl-psT" eventType="touchUpInside" id="elh-iM-s1t"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CG9-av-oE1" customClass="CustomAnotherButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="269.5" y="0.0" width="104.5" height="71"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <state key="normal" title="Dark"/>
+                                                        <connections>
+                                                            <action selector="setupDarkTheme:" destination="qN6-rl-psT" eventType="touchUpInside" id="Gjd-Bb-d7T"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="xZz-hT-Vxc" firstAttribute="top" secondItem="KEy-Jh-4Op" secondAttribute="top" constant="10" id="0bT-rm-GLe"/>
+                                            <constraint firstAttribute="bottom" secondItem="xZz-hT-Vxc" secondAttribute="bottom" constant="10" id="D9r-Kq-DU3"/>
+                                            <constraint firstItem="xZz-hT-Vxc" firstAttribute="leading" secondItem="KEy-Jh-4Op" secondAttribute="leading" constant="10" id="fcH-bY-CZ2"/>
+                                            <constraint firstAttribute="trailing" secondItem="xZz-hT-Vxc" secondAttribute="trailing" constant="10" id="g4i-OK-Xkb"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agf-tl-543">
+                                        <rect key="frame" x="0.0" y="202" width="394" height="91"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9K-6b-Stf">
+                                                <rect key="frame" x="10" y="6" width="374" height="84"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="60"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="70"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="X9K-6b-Stf" firstAttribute="height" secondItem="agf-tl-543" secondAttribute="height" multiplier="0.923077" id="B4a-4y-bPz"/>
+                                            <constraint firstAttribute="trailing" secondItem="X9K-6b-Stf" secondAttribute="trailing" constant="10" id="HCP-dg-4Ol"/>
+                                            <constraint firstItem="X9K-6b-Stf" firstAttribute="leading" secondItem="agf-tl-543" secondAttribute="leading" constant="10" id="JuI-AP-ppe"/>
+                                            <constraint firstAttribute="bottom" secondItem="X9K-6b-Stf" secondAttribute="bottom" constant="1" id="gz0-mu-KsQ"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7n6-Kw-bBg">
+                                        <rect key="frame" x="0.0" y="303" width="394" height="91"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5T-yH-F8V">
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eou-gj-3mT" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomLightGray"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                                        <state key="normal" title="AC">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorPreesed:" destination="qN6-rl-psT" eventType="touchUpInside" id="pOc-aW-C5N"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="eou-gj-3mT" firstAttribute="centerY" secondItem="A5T-yH-F8V" secondAttribute="centerY" id="76g-sw-uXD"/>
+                                                    <constraint firstItem="eou-gj-3mT" firstAttribute="centerX" secondItem="A5T-yH-F8V" secondAttribute="centerX" id="Jza-ec-Ybb"/>
+                                                    <constraint firstItem="eou-gj-3mT" firstAttribute="width" secondItem="A5T-yH-F8V" secondAttribute="width" multiplier="0.8" id="TfH-Rv-bXv"/>
+                                                    <constraint firstItem="eou-gj-3mT" firstAttribute="height" secondItem="A5T-yH-F8V" secondAttribute="height" multiplier="0.8" id="eV0-mh-pm4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLh-Ok-HDa">
+                                                <rect key="frame" x="101" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLe-hW-44e" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomLightGray"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                                        <state key="normal" title="+/-">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorPreesed:" destination="qN6-rl-psT" eventType="touchUpInside" id="U70-pY-ulF"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="KLe-hW-44e" firstAttribute="centerY" secondItem="xLh-Ok-HDa" secondAttribute="centerY" id="4Wb-Td-KlO"/>
+                                                    <constraint firstItem="KLe-hW-44e" firstAttribute="centerX" secondItem="xLh-Ok-HDa" secondAttribute="centerX" id="4g8-3U-tek"/>
+                                                    <constraint firstItem="KLe-hW-44e" firstAttribute="height" secondItem="xLh-Ok-HDa" secondAttribute="height" multiplier="0.8" id="KGM-VV-izo"/>
+                                                    <constraint firstItem="KLe-hW-44e" firstAttribute="width" secondItem="xLh-Ok-HDa" secondAttribute="width" multiplier="0.8" id="O8s-CV-pFW"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QT3-k9-dBu">
+                                                <rect key="frame" x="202" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zk5-1S-FWM" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                                        <state key="normal" title="%">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorPreesed:" destination="qN6-rl-psT" eventType="touchUpInside" id="AWG-YJ-S5U"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Zk5-1S-FWM" firstAttribute="height" secondItem="QT3-k9-dBu" secondAttribute="height" multiplier="0.8" id="WI9-cN-fwN"/>
+                                                    <constraint firstItem="Zk5-1S-FWM" firstAttribute="width" secondItem="QT3-k9-dBu" secondAttribute="width" multiplier="0.8" id="gLD-sd-di6"/>
+                                                    <constraint firstItem="Zk5-1S-FWM" firstAttribute="centerY" secondItem="QT3-k9-dBu" secondAttribute="centerY" id="m03-Pn-PXz"/>
+                                                    <constraint firstItem="Zk5-1S-FWM" firstAttribute="centerX" secondItem="QT3-k9-dBu" secondAttribute="centerX" id="nKF-b8-WQy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDO-MY-b2e">
+                                                <rect key="frame" x="303" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xje-eG-r6q" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" red="0.98039215686274506" green="0.6705882352941176" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorPreesed:" destination="qN6-rl-psT" eventType="touchUpInside" id="C6g-dX-4zJ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="xje-eG-r6q" firstAttribute="centerX" secondItem="wDO-MY-b2e" secondAttribute="centerX" id="6J5-eR-sHH"/>
+                                                    <constraint firstItem="xje-eG-r6q" firstAttribute="centerY" secondItem="wDO-MY-b2e" secondAttribute="centerY" id="DLB-JF-fCq"/>
+                                                    <constraint firstItem="xje-eG-r6q" firstAttribute="width" secondItem="wDO-MY-b2e" secondAttribute="width" multiplier="0.8" id="HvH-r5-6K8"/>
+                                                    <constraint firstItem="xje-eG-r6q" firstAttribute="height" secondItem="wDO-MY-b2e" secondAttribute="height" multiplier="0.8" id="nPR-pX-3M9"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="A5T-yH-F8V" firstAttribute="width" secondItem="7n6-Kw-bBg" secondAttribute="height" multiplier="1:1" id="ROU-Hj-jtr"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="m4r-Ie-tTH">
+                                        <rect key="frame" x="0.0" y="404" width="394" height="91"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1S-jE-RFV">
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wA-yh-5qx" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numberOfCalculatePressed:" destination="qN6-rl-psT" eventType="touchUpInside" id="19l-PO-L0R"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="1wA-yh-5qx" firstAttribute="width" secondItem="q1S-jE-RFV" secondAttribute="width" multiplier="0.8" id="K5K-kc-Ocx"/>
+                                                    <constraint firstItem="1wA-yh-5qx" firstAttribute="height" secondItem="q1S-jE-RFV" secondAttribute="height" multiplier="0.8" id="ea2-Tc-wf4"/>
+                                                    <constraint firstItem="1wA-yh-5qx" firstAttribute="centerY" secondItem="q1S-jE-RFV" secondAttribute="centerY" id="mBH-4O-1QW"/>
+                                                    <constraint firstItem="1wA-yh-5qx" firstAttribute="centerX" secondItem="q1S-jE-RFV" secondAttribute="centerX" id="nSE-FF-mqx"/>
+                                                    <constraint firstAttribute="width" secondItem="q1S-jE-RFV" secondAttribute="height" multiplier="1:1" id="yIA-Kv-ZVT"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bj5-7M-nAh">
+                                                <rect key="frame" x="101" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfE-Kk-FEH" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numberOfCalculatePressed:" destination="qN6-rl-psT" eventType="touchUpInside" id="PUF-Zu-Lve"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="EfE-Kk-FEH" firstAttribute="centerY" secondItem="Bj5-7M-nAh" secondAttribute="centerY" id="DB8-Ez-UDe"/>
+                                                    <constraint firstItem="EfE-Kk-FEH" firstAttribute="centerX" secondItem="Bj5-7M-nAh" secondAttribute="centerX" id="GTU-rv-6sk"/>
+                                                    <constraint firstItem="EfE-Kk-FEH" firstAttribute="height" secondItem="Bj5-7M-nAh" secondAttribute="height" multiplier="0.8" id="U1K-GA-hho"/>
+                                                    <constraint firstItem="EfE-Kk-FEH" firstAttribute="width" secondItem="Bj5-7M-nAh" secondAttribute="width" multiplier="0.8" id="fqg-cv-P4r"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ibt-LY-dGo">
+                                                <rect key="frame" x="202" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtX-Ff-6bB" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numberOfCalculatePressed:" destination="qN6-rl-psT" eventType="touchUpInside" id="vU8-5i-WV1"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="vtX-Ff-6bB" firstAttribute="width" secondItem="Ibt-LY-dGo" secondAttribute="width" multiplier="0.8" id="6bE-E4-nCY"/>
+                                                    <constraint firstItem="vtX-Ff-6bB" firstAttribute="centerY" secondItem="Ibt-LY-dGo" secondAttribute="centerY" id="Oxo-hK-rsE"/>
+                                                    <constraint firstItem="vtX-Ff-6bB" firstAttribute="height" secondItem="Ibt-LY-dGo" secondAttribute="height" multiplier="0.8" id="VHa-9F-ocZ"/>
+                                                    <constraint firstItem="vtX-Ff-6bB" firstAttribute="centerX" secondItem="Ibt-LY-dGo" secondAttribute="centerX" id="wBl-UN-6e4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2L-Xt-vMs">
+                                                <rect key="frame" x="303" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDq-YN-EMH" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomOrange"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="×">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorPreesed:" destination="qN6-rl-psT" eventType="touchUpInside" id="vfC-nw-5al"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="wDq-YN-EMH" firstAttribute="width" secondItem="l2L-Xt-vMs" secondAttribute="width" multiplier="0.8" id="2BL-U6-zH8"/>
+                                                    <constraint firstItem="wDq-YN-EMH" firstAttribute="centerX" secondItem="l2L-Xt-vMs" secondAttribute="centerX" id="AkH-dR-0bI"/>
+                                                    <constraint firstItem="wDq-YN-EMH" firstAttribute="centerY" secondItem="l2L-Xt-vMs" secondAttribute="centerY" id="Rhl-Ba-IcE"/>
+                                                    <constraint firstItem="wDq-YN-EMH" firstAttribute="height" secondItem="l2L-Xt-vMs" secondAttribute="height" multiplier="0.8" id="mhC-ND-yRU"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q5N-Yv-zxH">
+                                        <rect key="frame" x="0.0" y="505" width="394" height="91"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wv-hf-ZsI">
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ea-kc-5Pc" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numberOfCalculatePressed:" destination="qN6-rl-psT" eventType="touchUpInside" id="AIv-Qh-jmq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="3ea-kc-5Pc" firstAttribute="centerX" secondItem="1wv-hf-ZsI" secondAttribute="centerX" id="6eR-MK-blB"/>
+                                                    <constraint firstItem="3ea-kc-5Pc" firstAttribute="height" secondItem="1wv-hf-ZsI" secondAttribute="height" multiplier="0.8" id="EFd-Zi-5kW"/>
+                                                    <constraint firstItem="3ea-kc-5Pc" firstAttribute="centerY" secondItem="1wv-hf-ZsI" secondAttribute="centerY" id="cB4-GB-Iej"/>
+                                                    <constraint firstItem="3ea-kc-5Pc" firstAttribute="width" secondItem="1wv-hf-ZsI" secondAttribute="width" multiplier="0.8" id="eNN-B9-cEs"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sve-bK-wmO">
+                                                <rect key="frame" x="101" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4A-Cn-GYw" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numberOfCalculatePressed:" destination="qN6-rl-psT" eventType="touchUpInside" id="MdU-5I-0yz"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="y4A-Cn-GYw" firstAttribute="width" secondItem="Sve-bK-wmO" secondAttribute="width" multiplier="0.8" id="aSl-EY-vE2"/>
+                                                    <constraint firstItem="y4A-Cn-GYw" firstAttribute="centerX" secondItem="Sve-bK-wmO" secondAttribute="centerX" id="b60-Bq-icB"/>
+                                                    <constraint firstItem="y4A-Cn-GYw" firstAttribute="centerY" secondItem="Sve-bK-wmO" secondAttribute="centerY" id="cK4-lC-BWi"/>
+                                                    <constraint firstItem="y4A-Cn-GYw" firstAttribute="height" secondItem="Sve-bK-wmO" secondAttribute="height" multiplier="0.8" id="yid-SV-C5y"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7t-5p-CQS">
+                                                <rect key="frame" x="202" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp8-Zh-Ef5" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numberOfCalculatePressed:" destination="qN6-rl-psT" eventType="touchUpInside" id="79X-gd-y96"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Gp8-Zh-Ef5" firstAttribute="centerX" secondItem="R7t-5p-CQS" secondAttribute="centerX" id="8bK-H4-ZTf"/>
+                                                    <constraint firstItem="Gp8-Zh-Ef5" firstAttribute="width" secondItem="R7t-5p-CQS" secondAttribute="width" multiplier="0.8" id="9Xa-tA-e8w"/>
+                                                    <constraint firstItem="Gp8-Zh-Ef5" firstAttribute="height" secondItem="R7t-5p-CQS" secondAttribute="height" multiplier="0.8" id="fmo-5h-xzT"/>
+                                                    <constraint firstItem="Gp8-Zh-Ef5" firstAttribute="centerY" secondItem="R7t-5p-CQS" secondAttribute="centerY" id="pov-e7-Shn"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FuX-El-Gsy">
+                                                <rect key="frame" x="303" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IdG-DF-cw2" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomOrange"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorPreesed:" destination="qN6-rl-psT" eventType="touchUpInside" id="AMI-Lt-dvP"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="IdG-DF-cw2" firstAttribute="height" secondItem="FuX-El-Gsy" secondAttribute="height" multiplier="0.8" id="I6O-4e-8Ic"/>
+                                                    <constraint firstItem="IdG-DF-cw2" firstAttribute="centerY" secondItem="FuX-El-Gsy" secondAttribute="centerY" id="Kyf-Pa-JiW"/>
+                                                    <constraint firstItem="IdG-DF-cw2" firstAttribute="centerX" secondItem="FuX-El-Gsy" secondAttribute="centerX" id="Q8v-X3-ivN"/>
+                                                    <constraint firstItem="IdG-DF-cw2" firstAttribute="width" secondItem="FuX-El-Gsy" secondAttribute="width" multiplier="0.8" id="sx4-Sp-JJp"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SwA-hh-59q">
+                                        <rect key="frame" x="0.0" y="606" width="394" height="91"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKU-g1-UY6">
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cg4-RA-gpA" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numberOfCalculatePressed:" destination="qN6-rl-psT" eventType="touchUpInside" id="ToA-bX-MfK"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="cg4-RA-gpA" firstAttribute="width" secondItem="oKU-g1-UY6" secondAttribute="width" multiplier="0.8" id="CIz-gV-7QC"/>
+                                                    <constraint firstItem="cg4-RA-gpA" firstAttribute="centerY" secondItem="oKU-g1-UY6" secondAttribute="centerY" id="STd-lV-7IQ"/>
+                                                    <constraint firstItem="cg4-RA-gpA" firstAttribute="centerX" secondItem="oKU-g1-UY6" secondAttribute="centerX" id="rWU-yD-V1O"/>
+                                                    <constraint firstItem="cg4-RA-gpA" firstAttribute="height" secondItem="oKU-g1-UY6" secondAttribute="height" multiplier="0.8" id="ygJ-hU-ij8"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYV-xe-nxq">
+                                                <rect key="frame" x="101" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YW-9I-BOZ" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numberOfCalculatePressed:" destination="qN6-rl-psT" eventType="touchUpInside" id="nqG-hl-pn2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="9YW-9I-BOZ" firstAttribute="width" secondItem="LYV-xe-nxq" secondAttribute="width" multiplier="0.8" id="13g-Mi-GUL"/>
+                                                    <constraint firstItem="9YW-9I-BOZ" firstAttribute="height" secondItem="LYV-xe-nxq" secondAttribute="height" multiplier="0.8" id="29D-9Q-zSd"/>
+                                                    <constraint firstItem="9YW-9I-BOZ" firstAttribute="centerX" secondItem="LYV-xe-nxq" secondAttribute="centerX" id="G4c-KT-xE6"/>
+                                                    <constraint firstItem="9YW-9I-BOZ" firstAttribute="centerY" secondItem="LYV-xe-nxq" secondAttribute="centerY" id="ixf-CR-jGF"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNq-5r-xbd">
+                                                <rect key="frame" x="202" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7v-qQ-KhX" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numberOfCalculatePressed:" destination="qN6-rl-psT" eventType="touchUpInside" id="cFp-8F-Imv"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="p7v-qQ-KhX" firstAttribute="width" secondItem="fNq-5r-xbd" secondAttribute="width" multiplier="0.8" id="78W-xN-6z3"/>
+                                                    <constraint firstItem="p7v-qQ-KhX" firstAttribute="height" secondItem="fNq-5r-xbd" secondAttribute="height" multiplier="0.8" id="W0D-Ot-2T7"/>
+                                                    <constraint firstItem="p7v-qQ-KhX" firstAttribute="centerX" secondItem="fNq-5r-xbd" secondAttribute="centerX" id="Xch-uE-2CA"/>
+                                                    <constraint firstItem="p7v-qQ-KhX" firstAttribute="centerY" secondItem="fNq-5r-xbd" secondAttribute="centerY" id="fSf-e8-dh1"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Da4-Ax-cuI">
+                                                <rect key="frame" x="303" y="0.0" width="91" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjQ-1q-9AW" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9" y="9" width="73" height="73"/>
+                                                        <color key="backgroundColor" name="CustomOrange"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="-">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorPreesed:" destination="qN6-rl-psT" eventType="touchUpInside" id="nHV-nX-f0Q"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="KjQ-1q-9AW" firstAttribute="centerY" secondItem="Da4-Ax-cuI" secondAttribute="centerY" id="6lD-Kl-Ruw"/>
+                                                    <constraint firstItem="KjQ-1q-9AW" firstAttribute="height" secondItem="Da4-Ax-cuI" secondAttribute="height" multiplier="0.8" id="DPc-Jv-EUe"/>
+                                                    <constraint firstItem="KjQ-1q-9AW" firstAttribute="width" secondItem="Da4-Ax-cuI" secondAttribute="width" multiplier="0.8" id="JC9-Gb-GLY"/>
+                                                    <constraint firstItem="KjQ-1q-9AW" firstAttribute="centerX" secondItem="Da4-Ax-cuI" secondAttribute="centerX" id="iDc-Rd-znB"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5no-IJ-Kve">
+                                        <rect key="frame" x="0.0" y="707" width="394" height="91"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hk-IL-raD">
+                                                <rect key="frame" x="0.0" y="0.0" width="192" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScE-Ad-VhB" customClass="CustomAnotherButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                        <rect key="frame" x="9.5" y="9" width="173" height="73"/>
+                                                        <color key="backgroundColor" name="CustomGray"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numberOfCalculatePressed:" destination="qN6-rl-psT" eventType="touchUpInside" id="FQE-Xi-yvK"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="ScE-Ad-VhB" firstAttribute="height" secondItem="0hk-IL-raD" secondAttribute="height" multiplier="0.8" id="LHY-F3-Odc"/>
+                                                    <constraint firstItem="ScE-Ad-VhB" firstAttribute="width" secondItem="0hk-IL-raD" secondAttribute="width" multiplier="0.9" id="WZU-Vq-zfR"/>
+                                                    <constraint firstItem="ScE-Ad-VhB" firstAttribute="centerY" secondItem="0hk-IL-raD" secondAttribute="centerY" id="wuO-0v-OyD"/>
+                                                    <constraint firstItem="ScE-Ad-VhB" firstAttribute="centerX" secondItem="0hk-IL-raD" secondAttribute="centerX" id="xWt-MX-pRf"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZS2-5F-m6n">
+                                                <rect key="frame" x="202" y="0.0" width="192" height="91"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6NA-pW-Mrn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="95.5" height="91"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4R-KZ-90h" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                                <rect key="frame" x="9.5" y="9" width="76.5" height="73"/>
+                                                                <color key="backgroundColor" name="CustomGray"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title=".">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="numberOfCalculatePressed:" destination="qN6-rl-psT" eventType="touchUpInside" id="RNR-Md-x9T"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="L4R-KZ-90h" firstAttribute="centerX" secondItem="6NA-pW-Mrn" secondAttribute="centerX" id="CTf-ON-Z73"/>
+                                                            <constraint firstItem="L4R-KZ-90h" firstAttribute="centerY" secondItem="6NA-pW-Mrn" secondAttribute="centerY" id="G0G-pF-2yk"/>
+                                                            <constraint firstItem="L4R-KZ-90h" firstAttribute="width" secondItem="6NA-pW-Mrn" secondAttribute="width" multiplier="0.8" id="dz7-fL-TnQ"/>
+                                                            <constraint firstItem="L4R-KZ-90h" firstAttribute="height" secondItem="6NA-pW-Mrn" secondAttribute="height" multiplier="0.8" id="rgG-oG-wgd"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPz-sB-Mrw">
+                                                        <rect key="frame" x="96.5" y="0.0" width="95.5" height="91"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fE-Bi-uWW" customClass="CustomButton" customModule="ExDay2_iOSBasic_AnhND47" customModuleProvider="target">
+                                                                <rect key="frame" x="9.5" y="9" width="76.5" height="73"/>
+                                                                <color key="backgroundColor" name="CustomOrange"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="=">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="calculatorPreesed:" destination="qN6-rl-psT" eventType="touchUpInside" id="iZo-Aw-qiw"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="1fE-Bi-uWW" firstAttribute="height" secondItem="LPz-sB-Mrw" secondAttribute="height" multiplier="0.8" id="HIl-sf-58z"/>
+                                                            <constraint firstItem="1fE-Bi-uWW" firstAttribute="centerY" secondItem="LPz-sB-Mrw" secondAttribute="centerY" id="J1X-Cf-hnY"/>
+                                                            <constraint firstItem="1fE-Bi-uWW" firstAttribute="centerX" secondItem="LPz-sB-Mrw" secondAttribute="centerX" id="fSs-ov-z09"/>
+                                                            <constraint firstItem="1fE-Bi-uWW" firstAttribute="width" secondItem="LPz-sB-Mrw" secondAttribute="width" multiplier="0.8" id="iZb-Qy-dmT"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dxn-bD-4YY" firstAttribute="top" secondItem="Uox-lr-evY" secondAttribute="top" id="Pgh-Ux-Yka"/>
+                                    <constraint firstItem="KEy-Jh-4Op" firstAttribute="height" secondItem="7n6-Kw-bBg" secondAttribute="height" id="hiK-rH-H97"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D3Y-m8-FYN" firstAttribute="bottom" secondItem="Uox-lr-evY" secondAttribute="bottom" constant="10" id="PgN-mW-qw8"/>
+                            <constraint firstItem="D3Y-m8-FYN" firstAttribute="trailing" secondItem="Uox-lr-evY" secondAttribute="trailing" constant="10" id="Snl-qT-ts7"/>
+                            <constraint firstItem="Uox-lr-evY" firstAttribute="leading" secondItem="D3Y-m8-FYN" secondAttribute="leading" constant="10" id="rX4-5W-VHI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D3Y-m8-FYN"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="X9K-6b-Stf" id="Fho-Pn-UIy"/>
+                        <outletCollection property="utilityOfButtons" destination="eou-gj-3mT" collectionClass="NSMutableArray" id="FLz-2v-2ah"/>
+                        <outletCollection property="utilityOfButtons" destination="KLe-hW-44e" collectionClass="NSMutableArray" id="zTD-55-vlu"/>
+                        <outletCollection property="utilityOfButtons" destination="Zk5-1S-FWM" collectionClass="NSMutableArray" id="E96-eN-ZsK"/>
+                        <outletCollection property="operatorOfButtons" destination="xje-eG-r6q" collectionClass="NSMutableArray" id="TU6-IJ-RGG"/>
+                        <outletCollection property="operatorOfButtons" destination="wDq-YN-EMH" collectionClass="NSMutableArray" id="Z5l-tg-1MT"/>
+                        <outletCollection property="operatorOfButtons" destination="IdG-DF-cw2" collectionClass="NSMutableArray" id="x7G-U4-ayI"/>
+                        <outletCollection property="operatorOfButtons" destination="KjQ-1q-9AW" collectionClass="NSMutableArray" id="nTy-im-pSA"/>
+                        <outletCollection property="operatorOfButtons" destination="1fE-Bi-uWW" collectionClass="NSMutableArray" id="3VR-aE-nNy"/>
+                        <outletCollection property="numberOfButtons" destination="ScE-Ad-VhB" collectionClass="NSMutableArray" id="gDs-p7-Ez2"/>
+                        <outletCollection property="numberOfButtons" destination="L4R-KZ-90h" collectionClass="NSMutableArray" id="qCK-1c-lYx"/>
+                        <outletCollection property="numberOfButtons" destination="cg4-RA-gpA" collectionClass="NSMutableArray" id="xtn-Ha-bGD"/>
+                        <outletCollection property="numberOfButtons" destination="9YW-9I-BOZ" collectionClass="NSMutableArray" id="DHN-0Q-RMs"/>
+                        <outletCollection property="numberOfButtons" destination="p7v-qQ-KhX" collectionClass="NSMutableArray" id="bm1-cB-VwG"/>
+                        <outletCollection property="numberOfButtons" destination="3ea-kc-5Pc" collectionClass="NSMutableArray" id="0ib-Ui-0lb"/>
+                        <outletCollection property="numberOfButtons" destination="y4A-Cn-GYw" collectionClass="NSMutableArray" id="Q6i-nk-GLg"/>
+                        <outletCollection property="numberOfButtons" destination="Gp8-Zh-Ef5" collectionClass="NSMutableArray" id="I6Y-yA-aQg"/>
+                        <outletCollection property="numberOfButtons" destination="1wA-yh-5qx" collectionClass="NSMutableArray" id="NMK-HS-Uo1"/>
+                        <outletCollection property="numberOfButtons" destination="EfE-Kk-FEH" collectionClass="NSMutableArray" id="U62-fK-apJ"/>
+                        <outletCollection property="numberOfButtons" destination="vtX-Ff-6bB" collectionClass="NSMutableArray" id="o6V-Q6-Sap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2zF-OP-0yi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2696" y="-129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="CustomGray">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomLightGray">
+            <color red="0.64999997615814209" green="0.64999997615814209" blue="0.64999997615814209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomOrange">
+            <color red="0.98000001907348633" green="0.67000001668930054" blue="0.11999999731779099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
