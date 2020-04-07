@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OOe-0r-FQN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date And Time-->
+        <scene sceneID="ibD-lW-obb">
+            <objects>
+                <viewController id="f3O-KP-EVD" customClass="DateAndTimeViewController" customModule="iOSBasic_Example_Day4_AnhND47" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8re-97-r7K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f3w-el-TfR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="IfM-TU-gNG">
+                                <rect key="frame" x="0.0" y="358.5" width="414" height="216"/>
+                                <connections>
+                                    <action selector="changedDateTime:" destination="f3O-KP-EVD" eventType="valueChanged" id="i9q-Qg-Fpk"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IfM-TU-gNG" firstAttribute="leading" secondItem="a6Z-gn-2ev" secondAttribute="leading" id="26X-Q8-V19"/>
+                            <constraint firstItem="IfM-TU-gNG" firstAttribute="top" secondItem="f3w-el-TfR" secondAttribute="bottom" id="7Xe-6G-BgE"/>
+                            <constraint firstItem="f3w-el-TfR" firstAttribute="leading" secondItem="a6Z-gn-2ev" secondAttribute="leading" id="AgN-EI-a17"/>
+                            <constraint firstItem="a6Z-gn-2ev" firstAttribute="trailing" secondItem="f3w-el-TfR" secondAttribute="trailing" id="Qpb-bI-zEh"/>
+                            <constraint firstItem="f3w-el-TfR" firstAttribute="height" secondItem="8re-97-r7K" secondAttribute="height" multiplier="1/2.5" id="R0J-cn-6Nc"/>
+                            <constraint firstItem="IfM-TU-gNG" firstAttribute="trailing" secondItem="a6Z-gn-2ev" secondAttribute="trailing" id="aFW-sP-Vd0"/>
+                            <constraint firstItem="f3w-el-TfR" firstAttribute="top" secondItem="8re-97-r7K" secondAttribute="top" id="bxF-7K-bY3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a6Z-gn-2ev"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Date And Time" id="K1l-6t-BJy"/>
+                    <connections>
+                        <outlet property="dateTimePicker" destination="IfM-TU-gNG" id="4wl-cT-LRE"/>
+                        <outlet property="tableView" destination="f3w-el-TfR" id="JuY-Lm-qsm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0je-9x-Gkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205.7971014492755" y="-287.27678571428572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xsd-4u-mcQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OOe-0r-FQN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2dy-i9-FRn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f3O-KP-EVD" kind="relationship" relationship="rootViewController" id="BGW-kQ-MJr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BzK-Fe-iRL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295.6521739130435" y="-287.27678571428572"/>
+        </scene>
+    </scenes>
+</document>
