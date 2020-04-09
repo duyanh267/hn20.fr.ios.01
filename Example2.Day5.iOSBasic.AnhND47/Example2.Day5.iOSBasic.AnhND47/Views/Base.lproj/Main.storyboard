@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example2_Day5_iOSBasic_AnhND47" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qhk-Z3-ugV" customClass="CustomCircleView" customModule="Example2_Day5_iOSBasic_AnhND47" customModuleProvider="target">
+                                <rect key="frame" x="40" y="281" width="334" height="334"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Qhk-Z3-ugV" secondAttribute="height" multiplier="1:1" id="pRC-tJ-SXd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLf-Or-3PO" customClass="CustomComponents" customModule="Example2_Day5_iOSBasic_AnhND47" customModuleProvider="target">
+                                <rect key="frame" x="100" y="645" width="214" height="123"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="6nV-fu-ZRO"/>
+                                    <constraint firstAttribute="height" constant="123" id="xMU-Cx-80z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1717236936" green="0.28877440090000001" blue="0.3761992455" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qhk-Z3-ugV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6mz-ab-uXu"/>
+                            <constraint firstItem="hLf-Or-3PO" firstAttribute="top" secondItem="Qhk-Z3-ugV" secondAttribute="bottom" constant="30" id="MkW-7V-HbY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hLf-Or-3PO" secondAttribute="trailing" constant="100" id="WjQ-b5-qfU"/>
+                            <constraint firstItem="Qhk-Z3-ugV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hz1-6A-rM6"/>
+                            <constraint firstItem="Qhk-Z3-ugV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="p7T-2C-Adl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qhk-Z3-ugV" secondAttribute="trailing" constant="40" id="ucq-4S-ePu"/>
+                            <constraint firstItem="hLf-Or-3PO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="zqN-2T-3IF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="circleView" destination="Qhk-Z3-ugV" id="xY6-vL-JkI"/>
+                        <outlet property="componentView" destination="hLf-Or-3PO" id="EF6-Ob-qLj"/>
+                        <outlet property="progressCircle" destination="Qhk-Z3-ugV" id="moa-d2-0vY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="99"/>
+        </scene>
+    </scenes>
+</document>
