@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigationSearch" customModule="Example_Day6_iOSBasic_AnhND47" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="phZ-3W-WTr" id="vud-zB-AB2"/>
+                <outlet property="searchNavigationBar" destination="xLw-Jq-giR" id="3tq-cX-iST"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="phZ-3W-WTr">
+            <rect key="frame" x="0.0" y="0.0" width="494" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gan-NO-jed">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="nlu-6Z-Yuj"/>
+                        <constraint firstAttribute="height" constant="53" id="pzN-Of-JN8"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="Your Contact" id="vo7-0d-Sff">
+                            <barButtonItem key="rightBarButtonItem" systemItem="search" id="xLw-Jq-giR">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="actionSearchBarButton:" destination="-1" id="ODq-B8-eq5"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Wq8-xT-VOL" firstAttribute="bottom" secondItem="gan-NO-jed" secondAttribute="bottom" id="0wC-5l-8hH"/>
+                <constraint firstItem="gan-NO-jed" firstAttribute="top" secondItem="Wq8-xT-VOL" secondAttribute="top" id="QdZ-Gk-xed"/>
+                <constraint firstItem="gan-NO-jed" firstAttribute="leading" secondItem="Wq8-xT-VOL" secondAttribute="leading" id="jIE-T0-Ddb"/>
+                <constraint firstItem="Wq8-xT-VOL" firstAttribute="trailing" secondItem="gan-NO-jed" secondAttribute="trailing" id="x5i-w6-map"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Wq8-xT-VOL"/>
+            <point key="canvasLocation" x="-685.50724637681162" y="-26.116071428571427"/>
+        </view>
+    </objects>
+</document>
