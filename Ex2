@@ -1,0 +1,21 @@
+FILE MANAGER
+
+1. Document
+ + Lưu trữ nội dung do người dùng tạo
+ + Thư mục này được cung cấp cho người dùng thông qua chia sẻ file. Thư mục này nên chứa tệp hiển thị cho người dùng. ( sao lưu bởi icloud )
+
+ - Data: thường để lưu data người dùng và hiển thị cho người dùng nhập, tạo, sửa, xoá hoặc chỉnh sửa.
+
+
+ 2. Libary
+ + Lưu trữ những tiệp không phải dữ liệu người dùng.
+ + Sử dụng libary cho các file không tiếp xúc trực tiếp với người dùng.
+
+
+ - Data: thư mục này dùng để lưu trữ các file mà ứng dụng dùng để chạy (đã ẩn khỏi người dùng), file dữ liệu , cấu hình , mẫu và phiên bản sửa đổi, tài nguyên tải từ app bundle.
+
+ 3. Temp 
+ + Sử dụng file này để viết các file tạm thời, không tồn tại giữa các lần khởi chạy ứng dụng.
+ + Ứng dụng sẽ xoá tệp khi không cần thiết (không sao lưu).
+
+ - Lưu các dữ liệu tạm thời ( bất kỳ dữ liệu nào ) trong thời gian ngắn
